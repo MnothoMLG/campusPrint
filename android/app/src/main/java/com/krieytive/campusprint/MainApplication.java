@@ -1,4 +1,4 @@
-package com.invertase.rnfirebasestarter;
+package com.krieytive.campusprint;
 
 import androidx.multidex.MultiDexApplication;
 

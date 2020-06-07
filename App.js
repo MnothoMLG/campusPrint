@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Platform, Image, Text, View, ScrollView } from 'react-native';
+import { StyleSheet, TouchableHighlight as Btn, Platform, Image, Text, View, ScrollView } from 'react-native';
 
 import firebase from 'react-native-firebase';
 
@@ -22,23 +22,24 @@ export default class App extends React.Component {
       <ScrollView>
         <View style={styles.container}>
           <Image source={require('./assets/ReactNativeFirebase.png')} style={[styles.logo]}/>
-          <Text style={styles.welcome}>
-            Welcome to {'\n'} React Native Firebase
-          </Text>
-          <Text style={styles.instructions}>
-            To get started, edit App.js
-          </Text>
-          {Platform.OS === 'ios' ? (
-            <Text style={styles.instructions}>
-              Press Cmd+R to reload,{'\n'}
-              Cmd+D or shake for dev menu
-            </Text>
-          ) : (
-            <Text style={styles.instructions}>
-              Double tap R on your keyboard to reload,{'\n'}
-              Cmd+M or shake for dev menu
-            </Text>
-          )}
+       
+       <Btn 
+          style={{ alignSelf : "center",backgroundColor : "rgba(0,0,0,0.3)",
+          width :"40%", borderRadius: 4, height : 35, borderWidth : 1}} 
+       
+          onPress={()=>{
+              this.offersDoc = firebase.firestore() //this doc will keep an array offers
+              .collection('testCollection').doc('myTestId').get().then((doc)=>{
+                console.log(doc.data())
+              })
+              firebase.firestore() //this doc will keep an array offers
+              .collection('testCollection').doc('another1gfhhff').set({
+                surname : "Gumede2"
+              })
+              // console.log({doc : this.offersDoc})
+       }} >
+         <Text>Collection test</Text>
+       </Btn>
           <View style={styles.modules}>
             <Text style={styles.modulesHeader}>The following Firebase modules are pre-installed:</Text>
             {firebase.admob.nativeModuleExists && <Text style={styles.module}>admob()</Text>}

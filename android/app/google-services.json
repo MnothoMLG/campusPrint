@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "540186883924",
+    "firebase_url": "https://campusprint-3bf2d.firebaseio.com",
+    "project_id": "campusprint-3bf2d",
+    "storage_bucket": "campusprint-3bf2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540186883924:android:916f5565b05b031f657ac1",
+        "android_client_info": {
+          "package_name": "com.krieytive.campusprint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540186883924-bnhr8euvsr41i8dsau4tlvajbp5bah2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFDKKwPKBhc8MSwoww94eOO5MHNaEUssg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540186883924-bnhr8euvsr41i8dsau4tlvajbp5bah2p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "540186883924-ha69mptc3vthf4uni77qrpd39d806i7g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.krieytive.campusprint"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
